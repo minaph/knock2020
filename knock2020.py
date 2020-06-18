@@ -24,8 +24,8 @@ a = "Hi He Lied Because Boron Could Not Oxidize Fluorine. New Nations Might Also
 b = [1, 5, 6, 7, 8, 9, 15, 16, 19]
 
 # if節はおせっかい（笑）
-{v[:2-(i+1 in b)] if i != 11 else "Mg": i +
- 1 for i, v in enumerate(a.split(" "))}
+{v[:2-(i+1 in b)] if i != 11 else "Mg": 
+    i + 1 for i, v in enumerate(a.split(" "))}
 
 # %%
 # 1.5
