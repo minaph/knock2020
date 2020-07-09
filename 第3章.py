@@ -320,9 +320,10 @@ url = f"https://www.mediawiki.org/w/api.php?action=query&format=json&titles=File
 req = urllib.request.Request(url)
 with urllib.request.urlopen(req) as res:
     body = res.read().decode("utf-8")
-    data = re.match(r'"url":"([^"]*)"',body)
-    display(body)
-    display(data)
+    data = re.search(r'"url":"([^"]*)"',body)
+    # display(body)
+    display(data[1])
+    k.A = data[1]
 
 k.display()
 
